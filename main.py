@@ -16,6 +16,7 @@ def send_welcome(message):
 def send_welcome(message):
     bot.reply_to(message, 'Отмечаюсь на паре')
     click_all()
+    bot.reply_to(message, 'Всех отметил')
 
 
 bot.polling(none_stop=True)

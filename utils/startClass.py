@@ -19,7 +19,9 @@ class Click:
 
     def login(self):
         try:
-            driver = webdriver.Chrome("/Users/a.pavlov/Downloads/chromedriver")
+            chrome_options = Options()
+            chrome_options.add_argument("--headless")
+            driver = webdriver.Chrome("/Users/a.pavlov/Downloads/chromedriver", options=chrome_options)
             driver.get("https://lk.sut.ru/cabinet/#")
             driver.implicitly_wait(5)
             users = driver.find_element_by_name('users')
