@@ -20,3 +20,5 @@ def send_welcome(message):
 
 
 bot.polling(none_stop=True)
+
+print("Hello world")
